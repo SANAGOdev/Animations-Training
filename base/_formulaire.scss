@@ -1,0 +1,38 @@
+.fa-solid {
+  color: $color-background;
+  padding: 2rem;
+  border: 2px solid $color-background;
+}
+.form {
+  &__group {
+    & input {
+      border: 2px solid $cd-box;
+      border-radius: 100rem;
+      color: $cd-txt;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+      outline: none;
+      padding: 0.5rem 1.5rem;
+      width: 100%;
+      transition: background-color 400ms;
+      &:focus {
+        border: 2px solid $cd-txt;
+      }
+      &:not(:focus):invalid {
+        background-color: $cd-danger;
+        border: 2px solid $cd-danger;
+        color: $cd-box;
+      }
+      &:not(:focus):valid {
+        background-color: $color-background;
+        border: 2px solid $color-primary;
+        color: $cd-txt;
+      }
+    }
+    & label {
+      font-family: "Montserrat", sans-serif;
+      color: $cd-txt;
+      font-weight: bold;
+    }
+  }
+}

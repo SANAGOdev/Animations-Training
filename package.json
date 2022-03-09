@@ -1,0 +1,11 @@
+{
+  "name": "animationcss",
+  "version": "1.0.0",
+  "description": "test d'animations en css",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch main.scss:./css/style.css"
+  },
+  "author": "SANAGOdev",
+  "license": "ISC"
+}

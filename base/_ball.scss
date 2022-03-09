@@ -1,0 +1,27 @@
+.container--ball {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-color: rgb(237, 246, 247);
+}
+.boutton {
+  color: $cd-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: $color-primary;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  &:active + .ball {
+    transform: scale(1.15);
+  }
+}
+.ball {
+  width: $ball-size;
+  height: $ball-size;
+  background-color: $color-background;
+  margin-bottom: 1rem;
+  border-radius: $ball-size * 0.5;
+  transform: scale(0.1);
+  transition: transform 4s;
+}

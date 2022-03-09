@@ -1,0 +1,102 @@
+.global {
+  padding-top: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.bloc {
+  width: 300px;
+  height: 300px;
+  background-color: #011c37;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.bloc:hover {
+  transform: scale(1.3);
+}
+.bloc:active {
+  transform: scale(0.5);
+  background-color: #15dea5;
+  cursor: grabbing;
+}
+
+.container {
+  padding-top: 300px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 300px;
+  background-color: #edf6f7;
+}
+
+.btn__back {
+  background-color: #edf6f7;
+}
+
+.fa-solid {
+  color: #15dea5;
+  padding: 2rem;
+  border: 2px solid #15dea5;
+}
+
+.form__group input {
+  border: 2px solid #fff;
+  border-radius: 100rem;
+  color: #6300a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  transition: background-color 400ms;
+}
+.form__group input:focus {
+  border: 2px solid #6300a0;
+}
+.form__group input:not(:focus):invalid {
+  background-color: #b20a37;
+  border: 2px solid #b20a37;
+  color: #fff;
+}
+.form__group input:not(:focus):valid {
+  background-color: #15dea5;
+  border: 2px solid #011c37;
+  color: #6300a0;
+}
+.form__group label {
+  font-family: "Montserrat", sans-serif;
+  color: #6300a0;
+  font-weight: bold;
+}
+
+.container--ball {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-color: #edf6f7;
+}
+
+.boutton {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  background-color: #011c37;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+}
+.boutton:active + .ball {
+  transform: scale(1.15);
+}
+
+.ball {
+  width: 500px;
+  height: 500px;
+  background-color: #15dea5;
+  margin-bottom: 1rem;
+  border-radius: 250px;
+  transform: scale(0.1);
+  transition: transform 4s;
+}
+
+/*# sourceMappingURL=style.css.map */
