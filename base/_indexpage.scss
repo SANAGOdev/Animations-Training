@@ -1,13 +1,16 @@
 .global {
   @include center;
 }
+body{
+  margin: 0;
+}
 .bloc {
   width: map-get($map: $size, $key: width);
   height: map-get($map: $size, $key: height);
   background-color: $color-primary;
   cursor: pointer;
   transform: scale(1);
-  transition: transform 400ms;
+  transition: all 400ms;
   &:hover {
     transform: scale(1.3);
   }

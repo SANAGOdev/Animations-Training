@@ -1,9 +1,10 @@
-.fa-solid {
+.fa-angles-left {
   color: $color-background;
   padding: 2rem;
   border: 2px solid $color-background;
 }
 .form {
+  display: flex;
   &__group {
     & input {
       border: 2px solid $cd-box;
@@ -35,4 +36,30 @@
       font-weight: bold;
     }
   }
+}
+.btn{
+  &--enter{
+    font-family: "Montserrat", sans-serif;
+    color: $cd-box;
+    font-weight: bold;
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+    border: 2px solid $color-primary;
+    height: 65px;
+    margin-top: 17px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: $color-primary;
+    transition: all 100ms;
+    &:hover{
+      transform: scale(1.1);
+      background-color: $cd-txt;
+      color: $color-background;
+      cursor: pointer;
+    }
+  }
+}
+.fa-arrow-up-right-from-square{
+  margin-right: 5px;
 }

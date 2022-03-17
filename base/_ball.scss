@@ -12,6 +12,11 @@
   cursor: pointer;
   padding: 1.85rem 3rem;
   border-radius: 10rem;
+  transition: transform 0.2s;
+  &:active{
+    background-color: $color-background;
+    transform: scale(0.9);
+  }
   &:active + .ball {
     transform: scale(1.15);
   }

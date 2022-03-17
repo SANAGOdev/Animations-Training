@@ -7,5 +7,13 @@
     "sass": "sass --watch main.scss:./css/style.css"
   },
   "author": "SANAGOdev",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SANAGOdev/Animations-Training.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SANAGOdev/Animations-Training/issues"
+  },
+  "homepage": "https://github.com/SANAGOdev/Animations-Training#readme"
 }
